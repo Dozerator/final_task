@@ -1,0 +1,156 @@
+[
+    {
+        "type": "Windows Event",
+        "source": "winevent",
+        "source_ip": "192.168.1.100",
+        "description": "Event ID 4625: Неудачная попытка входа, count=3",
+        "severity": "high"
+    },
+    {
+        "type": "Windows Event",
+        "source": "winevent",
+        "source_ip": "192.168.1.100",
+        "description": "Event ID 4648: Вход с использованием явных учётных данных, count=1",
+        "severity": "medium"
+    },
+    {
+        "type": "Windows Event",
+        "source": "winevent",
+        "source_ip": "10.0.2.15",
+        "description": "Event ID 1102: Очистка журнала аудита, count=1",
+        "severity": "high"
+    },
+    {
+        "type": "Windows Event",
+        "source": "winevent",
+        "source_ip": "192.168.1.50",
+        "description": "Event ID 4720: Создание учётной записи, count=1",
+        "severity": "high"
+    },
+    {
+        "type": "DNS High Volume",
+        "source": "dns",
+        "source_ip": "192.168.1.100",
+        "description": "Частые DNS-запросы к demo-01, count=27",
+        "severity": "medium"
+    },
+    {
+        "type": "Suspicious DNS Query",
+        "source": "dns",
+        "source_ip": "192.168.1.100",
+        "description": "Подозрительный DNS-запрос: demo-01",
+        "severity": "high"
+    },
+    {
+        "type": "Malicious Domain",
+        "source": "VirusTotal",
+        "source_ip": "10.0.2.15",
+        "description": "Домен malicious-domain.com помечен как вредоносный (11 detections)",
+        "severity": "high"
+    },
+    {
+        "type": "DNS High Volume",
+        "source": "dns",
+        "source_ip": "192.168.1.50",
+        "description": "Частые DNS-запросы к google.com, count=120",
+        "severity": "medium"
+    },
+    {
+        "type": "Suspicious DNS Query",
+        "source": "dns",
+        "source_ip": "10.0.2.15",
+        "description": "Подозрительный DNS-запрос: EJFDEBFEEBFACACACACACACACACAAA",
+        "severity": "high"
+    },
+    {
+        "type": "DNS High Volume",
+        "source": "dns",
+        "source_ip": "192.168.1.100",
+        "description": "Частые DNS-запросы к microsoft.com, count=45",
+        "severity": "medium"
+    },
+    {
+        "type": "Sensitive Path Access",
+        "source": "http",
+        "source_ip": "192.168.1.100",
+        "description": "Доступ к чувствительному пути: /admin.php",
+        "severity": "medium"
+    },
+    {
+        "type": "Web Attack Tool",
+        "source": "http",
+        "source_ip": "10.0.2.15",
+        "description": "Обнаружен sqlmap: POST /login.php, status=403",
+        "severity": "high"
+    },
+    {
+        "type": "Web Scanner",
+        "source": "http",
+        "source_ip": "203.0.113.45",
+        "description": "Обнаружен Nikto: GET /wp-admin, status=404",
+        "severity": "high"
+    },
+    {
+        "type": "Sensitive Path Access",
+        "source": "http",
+        "source_ip": "203.0.113.45",
+        "description": "Доступ к чувствительному пути: /wp-admin",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "10.0.2.15",
+        "description": "ET WEB_SERVER Possible SQL Injection Attempt -> 192.168.1.10",
+        "severity": "high"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "203.0.113.45",
+        "description": "ET SCAN Nmap Scripting Engine User-Agent Detected -> 192.168.1.20",
+        "severity": "medium"
+    },
+    {
+        "type": "Large Network Flow",
+        "source": "suricata",
+        "source_ip": "192.168.1.100",
+        "description": "Крупный сетевой поток 192.168.1.100 -> 8.8.8.8, proto=UDP, toserver=150000, toclient=12000",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata DNS Burst",
+        "source": "suricata",
+        "source_ip": "192.168.1.100",
+        "description": "Повышенная DNS-активность по данным Suricata: 5 событий",
+        "severity": "medium"
+    },
+    {
+        "type": "High CVSS Vulnerability",
+        "source": "Vulners",
+        "source_ip": "N/A",
+        "description": "http-apache-negotiation NSE Script (CVSS=10.0)",
+        "severity": "high"
+    },
+    {
+        "type": "High CVSS Vulnerability",
+        "source": "Vulners",
+        "source_ip": "N/A",
+        "description": "BIT-APACHE-2025-58098 Apache HTTP Server: Server Side Includes adds query string to #exec cmd=... (CVSS=8.3)",
+        "severity": "high"
+    },
+    {
+        "type": "High CVSS Vulnerability",
+        "source": "Vulners",
+        "source_ip": "N/A",
+        "description": "BIT-APACHE-2025-49630 Apache HTTP Server: mod_proxy_http2 denial of service (CVSS=7.5)",
+        "severity": "high"
+    },
+    {
+        "type": "High CVSS Vulnerability",
+        "source": "Vulners",
+        "source_ip": "N/A",
+        "description": "BIT-APACHE-2024-40898 Apache HTTP Server: SSRF with mod_rewrite in server/vhost context on Windows (CVSS=9.1)",
+        "severity": "high"
+    }
+]

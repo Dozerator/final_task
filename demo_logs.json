@@ -1,0 +1,21 @@
+{
+  "winevent": [
+    {"timestamp": "2024-01-15 08:30:15", "event_id": 4625, "source_ip": "192.168.1.100", "user": "admin", "description": "Неудачная попытка входа", "count": 3},
+    {"timestamp": "2024-01-15 08:31:22", "event_id": 4624, "source_ip": "10.0.2.15", "user": "user1", "description": "Успешный вход", "count": 1},
+    {"timestamp": "2024-01-15 08:32:45", "event_id": 4648, "source_ip": "192.168.1.100", "user": "SYSTEM", "description": "Вход с использованием явных учётных данных", "count": 1},
+    {"timestamp": "2024-01-15 08:35:10", "event_id": 1102, "source_ip": "10.0.2.15", "user": "admin", "description": "Очистка журнала аудита", "count": 1},
+    {"timestamp": "2024-01-15 08:40:30", "event_id": 4720, "source_ip": "192.168.1.50", "user": "Administrator", "description": "Создание учётной записи", "count": 1}
+  ],
+  "dns": [
+    {"timestamp": "2024-01-15 09:00:00", "query": "demo-01", "src_ip": "192.168.1.100", "count": 27},
+    {"timestamp": "2024-01-15 09:01:00", "query": "malicious-domain.com", "src_ip": "10.0.2.15", "count": 15},
+    {"timestamp": "2024-01-15 09:02:00", "query": "google.com", "src_ip": "192.168.1.50", "count": 120},
+    {"timestamp": "2024-01-15 09:03:00", "query": "EJFDEBFEEBFACACACACACACACACAAA", "src_ip": "10.0.2.15", "count": 8},
+    {"timestamp": "2024-01-15 09:04:00", "query": "microsoft.com", "src_ip": "192.168.1.100", "count": 45}
+  ],
+  "http": [
+    {"timestamp": "2024-01-15 10:00:00", "src_ip": "192.168.1.100", "method": "GET", "url": "/admin.php", "status": 200, "user_agent": "Mozilla/5.0"},
+    {"timestamp": "2024-01-15 10:01:00", "src_ip": "10.0.2.15", "method": "POST", "url": "/login.php", "status": 403, "user_agent": "sqlmap/1.6"},
+    {"timestamp": "2024-01-15 10:02:00", "src_ip": "203.0.113.45", "method": "GET", "url": "/wp-admin", "status": 404, "user_agent": "Nikto/2.1.6"}
+  ]
+}

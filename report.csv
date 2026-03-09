@@ -1,0 +1,23 @@
+﻿incident_id,type,source,source_ip,description,severity
+19,High CVSS Vulnerability,Vulners,N/A,http-apache-negotiation NSE Script (CVSS=10.0),high
+20,High CVSS Vulnerability,Vulners,N/A,BIT-APACHE-2025-58098 Apache HTTP Server: Server Side Includes adds query string to #exec cmd=... (CVSS=8.3),high
+21,High CVSS Vulnerability,Vulners,N/A,BIT-APACHE-2025-49630 Apache HTTP Server: mod_proxy_http2 denial of service (CVSS=7.5),high
+22,High CVSS Vulnerability,Vulners,N/A,BIT-APACHE-2024-40898 Apache HTTP Server: SSRF with mod_rewrite in server/vhost context on Windows (CVSS=9.1),high
+7,Malicious Domain,VirusTotal,10.0.2.15,Домен malicious-domain.com помечен как вредоносный (11 detections),high
+15,Suricata Alert,suricata,10.0.2.15,ET WEB_SERVER Possible SQL Injection Attempt -> 192.168.1.10,high
+6,Suspicious DNS Query,dns,192.168.1.100,Подозрительный DNS-запрос: demo-01,high
+9,Suspicious DNS Query,dns,10.0.2.15,Подозрительный DNS-запрос: EJFDEBFEEBFACACACACACACACACAAA,high
+12,Web Attack Tool,http,10.0.2.15,"Обнаружен sqlmap: POST /login.php, status=403",high
+13,Web Scanner,http,203.0.113.45,"Обнаружен Nikto: GET /wp-admin, status=404",high
+1,Windows Event,winevent,192.168.1.100,"Event ID 4625: Неудачная попытка входа, count=3",high
+3,Windows Event,winevent,10.0.2.15,"Event ID 1102: Очистка журнала аудита, count=1",high
+4,Windows Event,winevent,192.168.1.50,"Event ID 4720: Создание учётной записи, count=1",high
+5,DNS High Volume,dns,192.168.1.100,"Частые DNS-запросы к demo-01, count=27",medium
+8,DNS High Volume,dns,192.168.1.50,"Частые DNS-запросы к google.com, count=120",medium
+10,DNS High Volume,dns,192.168.1.100,"Частые DNS-запросы к microsoft.com, count=45",medium
+17,Large Network Flow,suricata,192.168.1.100,"Крупный сетевой поток 192.168.1.100 -> 8.8.8.8, proto=UDP, toserver=150000, toclient=12000",medium
+11,Sensitive Path Access,http,192.168.1.100,Доступ к чувствительному пути: /admin.php,medium
+14,Sensitive Path Access,http,203.0.113.45,Доступ к чувствительному пути: /wp-admin,medium
+16,Suricata Alert,suricata,203.0.113.45,ET SCAN Nmap Scripting Engine User-Agent Detected -> 192.168.1.20,medium
+18,Suricata DNS Burst,suricata,192.168.1.100,Повышенная DNS-активность по данным Suricata: 5 событий,medium
+2,Windows Event,winevent,192.168.1.100,"Event ID 4648: Вход с использованием явных учётных данных, count=1",medium
