@@ -100,29 +100,309 @@
     {
         "type": "Suricata Alert",
         "source": "suricata",
-        "source_ip": "10.0.2.15",
-        "description": "ET WEB_SERVER Possible SQL Injection Attempt -> 192.168.1.10",
-        "severity": "high"
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Potential SSH Scan -> 138.68.3.71",
+        "severity": "medium"
     },
     {
         "type": "Suricata Alert",
         "source": "suricata",
-        "source_ip": "203.0.113.45",
-        "description": "ET SCAN Nmap Scripting Engine User-Agent Detected -> 192.168.1.20",
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Potential VNC Scan 5800-5820 -> 138.68.3.71",
         "severity": "medium"
     },
     {
-        "type": "Large Network Flow",
+        "type": "Suricata Alert",
         "source": "suricata",
-        "source_ip": "192.168.1.100",
-        "description": "Крупный сетевой поток 192.168.1.100 -> 8.8.8.8, proto=UDP, toserver=150000, toclient=12000",
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Potential VNC Scan 5900-5920 -> 138.68.3.71",
         "severity": "medium"
     },
     {
-        "type": "Suricata DNS Burst",
+        "type": "Suricata Alert",
         "source": "suricata",
-        "source_ip": "192.168.1.100",
-        "description": "Повышенная DNS-активность по данным Suricata: 5 событий",
+        "source_ip": "80.211.246.121",
+        "description": "ET SCAN Sipvicious Scan -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Suspicious inbound to MSSQL port 1433 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Suspicious inbound to Oracle SQL port 1521 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Suspicious inbound to mySQL port 3306 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "8.42.77.171",
+        "description": "ET SCAN Suspicious inbound to PostgreSQL port 5432 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "37.49.231.178",
+        "description": "ET SCAN Sipvicious User-Agent Detected (friendly-scanner) -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "138.68.3.71",
+        "description": "ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management -> 198.199.99.226",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "184.105.139.67",
+        "description": "GPL SNMP public access udp -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "92.63.194.33",
+        "description": "ET DROP Dshield Block Listed Source group 1 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "185.244.25.167",
+        "description": "ET DROP Dshield Block Listed Source group 1 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "1.169.38.217",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 1 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "5.101.40.81",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 3 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "5.141.67.237",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 4 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "5.188.206.22",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 5 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "31.163.158.140",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 18 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "31.192.108.68",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 19 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "37.49.231.125",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 24 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "37.49.231.178",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP UDP group 24 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "43.227.231.129",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 32 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "45.62.211.169",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 35 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "46.100.43.82",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 36 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "58.218.213.6",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 44 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "58.48.32.199",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 45 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "59.47.71.13",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 49 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "61.176.222.167",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 56 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "61.219.11.151",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 57 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "66.240.236.119",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 62 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "71.6.232.4",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 67 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "71.6.199.23",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP UDP group 67 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "78.128.112.98",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 73 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "80.211.172.233",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 76 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "80.211.246.121",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP UDP group 76 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "80.82.77.33",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 77 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "82.202.209.155",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 79 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "88.202.190.148",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 86 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "88.214.26.54",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 87 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "89.248.168.51",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP UDP group 89 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "91.245.36.26",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 92 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "92.53.76.213",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 93 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "92.63.194.33",
+        "description": "ET CINS Active Threat Intelligence Poor Reputation IP TCP group 94 -> 138.68.3.71",
+        "severity": "medium"
+    },
+    {
+        "type": "Suricata Alert",
+        "source": "suricata",
+        "source_ip": "185.244.25.145",
+        "description": "ET COMPROMISED Known Compromised or Hostile Host Traffic TCP group 46 -> 138.68.3.71",
         "severity": "medium"
     },
     {

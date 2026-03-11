@@ -225,15 +225,26 @@ def analyze_http_logs(http_df):
 # =========================================
 
 def load_suricata_logs(filename="suricata_eve.json"):
-    """Загружает Suricata eve.json в формате JSON Lines."""
     if not os.path.exists(filename):
         print(f"[WARNING] Файл {filename} не найден. Анализ Suricata будет пропущен.")
         return pd.DataFrame()
 
-    records = []
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            content = f.read().strip()
 
-    with open(filename, "r", encoding="utf-8") as f:
-        for line in f:
+        # Если файл начинается с [, значит это JSON-массив
+        if content.startswith("["):
+            data = json.loads(content)
+            if isinstance(data, list):
+                return pd.DataFrame(data)
+            else:
+                print("[WARNING] JSON не является списком записей.")
+                return pd.DataFrame()
+
+        # Иначе считаем, что это JSON Lines
+        records = []
+        for line in content.splitlines():
             line = line.strip()
             if line:
                 try:
@@ -241,8 +252,11 @@ def load_suricata_logs(filename="suricata_eve.json"):
                 except json.JSONDecodeError:
                     print(f"[WARNING] Пропущена некорректная строка Suricata: {line[:80]}")
 
-    return pd.DataFrame(records)
+        return pd.DataFrame(records)
 
+    except Exception as e:
+        print(f"[ERROR] Ошибка чтения логов Suricata: {e}")
+        return pd.DataFrame()
 
 def analyze_suricata_logs(suricata_df):
     """Анализирует alert, flow и dns события Suricata."""
@@ -454,6 +468,11 @@ def save_charts():
     ax.set_xlabel("Тип угрозы")
     ax.set_ylabel("Количество")
     plt.xticks(rotation=45, ha="right")
+    
+    # Добавляем точные значения на столбцы
+    for i, v in enumerate(type_counts.values):
+        ax.text(i, v, str(int(v)), ha='center', va='bottom', fontweight='bold')
+    
     plt.tight_layout()
     plt.savefig("threat_statistics.png", dpi=300)
     plt.close()
@@ -466,6 +485,11 @@ def save_charts():
     ax.set_title("Распределение угроз по критичности")
     ax.set_xlabel("Критичность")
     ax.set_ylabel("Количество")
+    
+    # Добавляем точные значения на столбцы
+    for i, v in enumerate(severity_counts.values):
+        ax.text(i, v, str(int(v)), ha='center', va='bottom', fontweight='bold')
+    
     plt.tight_layout()
     plt.savefig("severity_statistics.png", dpi=300)
     plt.close()
